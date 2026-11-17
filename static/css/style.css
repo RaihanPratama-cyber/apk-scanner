@@ -1,0 +1,30 @@
+body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a;
+  line-height: 1.5; }
+h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+.intro { color: #444; }
+.panel { border: 1px solid #ddd; border-radius: 8px; padding: 1rem 1.25rem;
+  margin: 1rem 0; }
+button { cursor: pointer; padding: 0.45rem 0.9rem; border-radius: 6px;
+  border: 1px solid #999; background: #fff; margin: 0.25rem 0.25rem 0.25rem 0; }
+button:hover { background: #f0f0f0; }
+.status { color: #555; }
+#verdict { font-size: 1.25rem; font-weight: 700; padding: 0.6rem 0.9rem;
+  border-radius: 6px; display: inline-block; }
+#verdict.Safe { background: #dcf5e3; color: #146c2e; }
+#verdict.Suspicious { background: #fff3cd; color: #7a5b00; }
+#verdict.High.Risk, #verdict.High\ Risk { background: #ffe0cc; color: #8a3d00; }
+#verdict.Malicious { background: #fbdcdc; color: #8b1a1a; }
+table { border-collapse: collapse; width: 100%; margin: 0.5rem 0; }
+td, th { border: 1px solid #ddd; padding: 0.4rem 0.6rem; text-align: left;
+  vertical-align: top; word-break: break-all; }
+th { background: #f6f6f6; width: 30%; }
+.finding { border: 1px solid #ddd; border-left-width: 6px; border-radius: 6px;
+  padding: 0.6rem 0.9rem; margin: 0.6rem 0; }
+.finding.critical { border-left-color: #b00020; }
+.finding.high { border-left-color: #d97706; }
+.finding.medium { border-left-color: #ca8a04; }
+.finding.low { border-left-color: #2563eb; }
+.finding.info { border-left-color: #6b7280; }
+.finding code { background: #f3f3f3; padding: 0.1rem 0.3rem; border-radius: 4px;
+  word-break: break-all; }

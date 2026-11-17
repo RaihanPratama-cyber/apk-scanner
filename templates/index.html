@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>APK Scanner — check an APK before you install it</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<main>
+  <h1>APK Scanner</h1>
+  <p class="intro">Check an Android APK <strong>before</strong> you install it.
+  Upload the file, or try one of the examples. The scan is fully offline:
+  nothing is uploaded anywhere else, and nothing from the APK is run.</p>
+
+  <section class="panel">
+    <h2>Scan an APK</h2>
+    <form id="scan-form">
+      <input type="file" id="file-input" accept=".apk" required>
+      <button type="submit">Scan this APK</button>
+    </form>
+    <p class="hint">Or load an example:</p>
+    <button id="example-benign" type="button">Benign example</button>
+    <button id="example-malicious" type="button">Malicious example</button>
+    <p id="status" class="status"></p>
+  </section>
+
+  <section id="results" class="panel" hidden>
+    <h2>Result</h2>
+    <div id="verdict"></div>
+    <p id="summary"></p>
+    <h3>App</h3>
+    <table id="app-table"></table>
+    <h3>File</h3>
+    <table id="file-table"></table>
+    <h3>Permissions</h3>
+    <ul id="permissions"></ul>
+    <h3>Findings</h3>
+    <div id="findings"></div>
+  </section>
+</main>
+<script src="/static/js/app.js"></script>
+</body>
+</html>
